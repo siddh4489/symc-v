@@ -1,0 +1,37 @@
+<ion-view title="Claim Form" hide-back-button="true">
+
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+
+    <ion-content has-header="true" padding="true">
+        <div class="list list-inset">
+
+            <fieldset>
+                <legend class="item item-input">Claim Form Details</legend>
+                <div class=list>
+                	<label class="item item-input">
+                        <input type="text" placeholder="Name of the Policyholder" ng-model="claim.policyholdername">
+                    </label>
+                    <label class="item item-input">
+                        <input type="text" placeholder="Name of the Claimant" ng-model="claim.claimant">
+                    </label>
+                    <div class="item item-body">
+                        <textarea placeholder="Communication Address" rows="5" ng-model="claim.address"></textarea>
+                      </div>
+                    <label class="item item-input">
+                        <input type="text" placeholder="Telephone Number" ng-model="claim.phone">
+                    </label>
+                    <label class="item item-input">
+                        <input type="text" placeholder="PAN Number" ng-model="claim.panno">
+                    </label>
+                  </div>
+      </fieldset>
+
+        </div>
+      <button class="button button-block button-light" ng-click="submit()">
+                Submit
+        </button>
+    </ion-content>
+
+</ion-view>

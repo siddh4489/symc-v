@@ -1,0 +1,25 @@
+<ion-view title="Mail Details" class="card-bg">
+
+    <ion-content has-header="true" padding="true">
+
+        <h2 style="text-align:center">Your Image/PDF Preview</h2>
+        <span>Wait for few minutes if your image size is too large.</span>
+        <div style="text-align:center">
+           <img id="displayImage" style="display:none;text-align:center;" height="80%" width="60%" src=""/>
+        </div>
+
+        <br/><br/><br/>
+        <div class="tabs">
+            <a class="tab-item" ng-click="deleteattachment()">
+                <i>Delete</i>
+            </a>
+            <a class="tab-item" ng-click="openscan()">
+                <i>Open/Scan</i>
+            </a>
+            <a class="tab-item" ng-click="forward()">
+                <i>Forward</i>
+            </a>
+        </div>
+
+    </ion-content>
+</ion-view>
